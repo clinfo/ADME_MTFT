@@ -1,0 +1,40 @@
+adme: clint
+Mean: 1.5076234090969585
+Standard Deviation: 0.7127607352504016
+
+adme: fe
+Mean: 0.30175561160000003
+Standard Deviation: 0.3292305611519447
+
+adme: fubrain
+Mean: 0.22213636262643924
+Standard Deviation: 0.3014267285476318
+
+adme: fup_human
+Mean: 0.18380944620705797
+Standard Deviation: 0.25558691455345145
+
+adme: fup_rat
+Mean: 0.24691370250489508
+Standard Deviation: 0.3159499268505813
+
+adme: ner_human
+Mean: 0.4244496758277992
+Standard Deviation: 0.5338201769235339
+
+adme: papp_caco2
+Mean: 0.6089695183345536
+Standard Deviation: 0.8058877492401398
+
+adme: papp_llc
+Mean: 0.9057765783303543
+Standard Deviation: 1.147996818877095
+
+adme: rb_rat
+Mean: 0.053673860310654055
+Standard Deviation: 0.2825152677816694
+
+adme: sol
+Mean: 1.3293882573980302
+Standard Deviation: 1.4504305940604962
+

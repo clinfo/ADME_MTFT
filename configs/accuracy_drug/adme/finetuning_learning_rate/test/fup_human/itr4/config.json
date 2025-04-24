@@ -1,0 +1,188 @@
+{
+  "model": {
+    "type": "graph_convolutional",
+    "in_features": 45,
+    "out_features": 10,
+    "hidden_features": 960,
+    "dropout": 0.0,
+    "layer_type": "torch_geometric.nn.GCNConv",
+    "layers_count": 4,
+    "molecule_features": 0,
+    "molecule_hidden": 32,
+    "is_residual": 1,
+    "norm_layer": "kmol.model.layers.BatchNorm",
+    "edge_features": 12,
+    "read_out": "attention"
+  },
+  "loader": {
+    "type": "multitask",
+    "input_path": "../ADMET/dataset/all_train_data_2022/standardize-drug_list/ADME/five_fold/itr4/test/fup_human.csv",
+    "input_column_names": [
+      "smiles"
+    ],
+    "target_column_names": [
+      "value"
+    ],
+    "task_column_name": "target_id",
+    "max_num_tasks": 10
+  },
+  "splitter": {
+    "type": "index",
+    "splits": {
+      "test": 1.0
+    }
+  },
+  "featurizers": [
+    {
+      "type": "graph",
+      "inputs": [
+        "smiles"
+      ],
+      "outputs": [
+        "graph"
+      ],
+      "descriptor_calculator": {
+        "type": "rdkit"
+      }
+    }
+  ],
+  "transformers": [
+    {
+      "type": "standardize",
+      "target": 0,
+      "mean": 1.518876990070199,
+      "std": 0.7151674789416009
+    },
+    {
+      "type": "standardize",
+      "target": 1,
+      "mean": 0.2895196465,
+      "std": 0.31382674832469715
+    },
+    {
+      "type": "standardize",
+      "target": 2,
+      "mean": 0.21715691708489362,
+      "std": 0.29284373941971975
+    },
+    {
+      "type": "standardize",
+      "target": 3,
+      "mean": 0.1825349021709863,
+      "std": 0.2573730525307257
+    },
+    {
+      "type": "standardize",
+      "target": 4,
+      "mean": 0.22847873905291374,
+      "std": 0.3063820970802672
+    },
+    {
+      "type": "standardize",
+      "target": 5,
+      "mean": 0.4241633750430732,
+      "std": 0.5382635568959567
+    },
+    {
+      "type": "standardize",
+      "target": 6,
+      "mean": 0.6118355100530338,
+      "std": 0.7934910567835596
+    },
+    {
+      "type": "standardize",
+      "target": 7,
+      "mean": 0.8518402487887694,
+      "std": 1.206434922149692
+    },
+    {
+      "type": "standardize",
+      "target": 8,
+      "mean": 0.04613583588295951,
+      "std": 0.27093489897067824
+    },
+    {
+      "type": "standardize",
+      "target": 9,
+      "mean": 1.3189111069919095,
+      "std": 1.4305905374523602
+    }
+  ],
+  "criterion": {
+    "type": "kmol.model.criterions.MaskedLoss",
+    "loss": {
+      "type": "torch.nn.SmoothL1Loss"
+    }
+  },
+  "optimizer": {
+    "type": "torch.optim.AdamW",
+    "lr": 2e-07,
+    "weight_decay": 0.0288
+  },
+  "scheduler": {
+    "type": "torch.optim.lr_scheduler.ExponentialLR",
+    "gamma": 0.95
+  },
+  "output_path": "../ADMET/configs/accuracy_drug/adme/finetuning_learning_rate/test/fup_human/itr4",
+  "collater": {
+    "type": "general"
+  },
+  "is_stepwise_scheduler": false,
+  "is_finetuning": true,
+  "checkpoint_path": "../ADMET/configs/accuracy_drug/adme/finetuning_learning_rate/train/fup_human/itr4/checkpoint.best.pt",
+  "threshold": null,
+  "inference_mode": "null",
+  "cross_validation_folds": 5,
+  "mc_dropout_iterations": 10,
+  "mc_dropout_probability": 0.1,
+  "probe_layer": null,
+  "train_split": "train",
+  "train_metrics": [
+    "r2",
+    "mae"
+  ],
+  "validation_split": "validation",
+  "test_split": "test",
+  "test_metrics": [
+    "r2",
+    "mae",
+    "rmse"
+  ],
+  "prediction_additional_columns": [],
+  "epochs": 200,
+  "batch_size": 24,
+  "drop_last_batch": true,
+  "use_cuda": true,
+  "enabled_gpus": [
+    0
+  ],
+  "num_workers": 8,
+  "featurization_jobs": 8,
+  "preprocessor": {
+    "type": "online"
+  },
+  "cache_location": "../ADMET/data/cache/",
+  "clear_cache": false,
+  "log_level": "info",
+  "log_format": "",
+  "log_frequency": 5,
+  "overwrite_checkpoint": true,
+  "observers": {
+    "before_metric": [
+      {
+        "type": "remove_nans"
+      }
+    ]
+  },
+  "differential_privacy": {
+    "enabled": false
+  },
+  "target_metric": "r2",
+  "optuna_trials": 100,
+  "optuna_init": null,
+  "subset": null,
+  "visualizer": null,
+  "augmentations": [],
+  "static_augmentations": [],
+  "seed": 42
+}

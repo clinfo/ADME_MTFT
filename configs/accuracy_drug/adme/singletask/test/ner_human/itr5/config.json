@@ -1,0 +1,130 @@
+{
+  "model": {
+    "type": "graph_convolutional",
+    "in_features": 45,
+    "out_features": 1,
+    "hidden_features": 96,
+    "dropout": 0.0,
+    "layer_type": "torch_geometric.nn.GCNConv",
+    "layers_count": 1,
+    "molecule_features": 0,
+    "molecule_hidden": 32,
+    "is_residual": true,
+    "norm_layer": "kmol.model.layers.BatchNorm",
+    "edge_features": 12,
+    "read_out": "attention"
+  },
+  "loader": {
+    "type": "csv",
+    "input_path": "../ADMET/dataset/all_train_data_2022/standardize-drug_list/ADME/five_fold/singletask/itr5/test/ner_human.csv",
+    "input_column_names": [
+      "smiles"
+    ],
+    "target_column_names": [
+      "value"
+    ]
+  },
+  "splitter": {
+    "type": "index",
+    "splits": {
+      "test": 1.0
+    }
+  },
+  "featurizers": [
+    {
+      "type": "graph",
+      "inputs": [
+        "smiles"
+      ],
+      "outputs": [
+        "graph"
+      ],
+      "descriptor_calculator": {
+        "type": "rdkit"
+      }
+    }
+  ],
+  "transformers": [
+    {
+      "type": "standardize",
+      "target": 0,
+      "mean": 0.441452,
+      "std": 0.539963
+    }
+  ],
+  "criterion": {
+    "type": "torch.nn.SmoothL1Loss"
+  },
+  "optimizer": {
+    "type": "torch.optim.AdamW",
+    "lr": 0.03730000000000001,
+    "weight_decay": 0.0016
+  },
+  "scheduler": {
+    "type": "torch.optim.lr_scheduler.OneCycleLR",
+    "max_lr": 0.01,
+    "epochs": 200,
+    "pct_start": 0.3,
+    "div_factor": 25,
+    "final_div_factor": 1000
+  },
+  "output_path": "../ADMET/configs/accuracy_drug/adme/singletask/test/ner_human/itr5",
+  "collater": {
+    "type": "general"
+  },
+  "is_stepwise_scheduler": true,
+  "is_finetuning": false,
+  "checkpoint_path": "../ADMET/configs/accuracy_drug/adme/singletask/train/ner_human/itr5/checkpoint.best.pt",
+  "threshold": null,
+  "inference_mode": null,
+  "cross_validation_folds": 5,
+  "mc_dropout_iterations": 5,
+  "mc_dropout_probability": 0.1,
+  "probe_layer": null,
+  "train_split": "train",
+  "train_metrics": [
+    "r2",
+    "mae",
+    "rmse"
+  ],
+  "validation_split": "validation",
+  "test_split": "test",
+  "test_metrics": [
+    "r2",
+    "mae",
+    "rmse"
+  ],
+  "prediction_additional_columns": [],
+  "epochs": 200,
+  "batch_size": 32,
+  "drop_last_batch": false,
+  "use_cuda": true,
+  "enabled_gpus": [
+    0
+  ],
+  "num_workers": 0,
+  "featurization_jobs": 4,
+  "preprocessor": {
+    "type": "cache",
+    "use_disk": false,
+    "disk_dir": null
+  },
+  "cache_location": "data/cache/",
+  "clear_cache": false,
+  "log_level": "info",
+  "log_format": "",
+  "log_frequency": 5,
+  "overwrite_checkpoint": true,
+  "observers": {},
+  "differential_privacy": {
+    "enabled": false
+  },
+  "target_metric": "r2",
+  "optuna_trials": 500,
+  "optuna_init": null,
+  "subset": null,
+  "visualizer": null,
+  "augmentations": [],
+  "static_augmentations": [],
+  "seed": 42
+}

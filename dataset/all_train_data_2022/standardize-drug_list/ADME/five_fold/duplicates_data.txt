@@ -1,0 +1,399 @@
+itr1 train clint
+clint: 4205
+duplicate_smiles_of_multi: 4205
+
+itr1 train fe
+fe: 275
+duplicate_smiles_of_multi: 275
+
+itr1 train fubrain
+fubrain: 470
+duplicate_smiles_of_multi: 470
+
+itr1 train fup_human
+fup_human: 2778
+duplicate_smiles_of_multi: 2778
+
+itr1 train fup_rat
+fup_rat: 429
+duplicate_smiles_of_multi: 429
+
+itr1 train ner_human
+ner_human: 357
+duplicate_smiles_of_multi: 357
+
+itr1 train papp_caco2
+papp_caco2: 4465
+duplicate_smiles_of_multi: 4465
+
+itr1 train papp_llc
+papp_llc: 370
+duplicate_smiles_of_multi: 370
+
+itr1 train rb_rat
+rb_rat: 131
+duplicate_smiles_of_multi: 131
+
+itr1 train sol
+sol: 11514
+duplicate_smiles_of_multi: 11514
+
+itr1 test clint
+clint: 1051
+duplicate_smiles_of_multi: 1051
+
+itr1 test fe
+fe: 68
+duplicate_smiles_of_multi: 68
+
+itr1 test fubrain
+fubrain: 117
+duplicate_smiles_of_multi: 117
+
+itr1 test fup_human
+fup_human: 694
+duplicate_smiles_of_multi: 694
+
+itr1 test fup_rat
+fup_rat: 107
+duplicate_smiles_of_multi: 107
+
+itr1 test ner_human
+ner_human: 89
+duplicate_smiles_of_multi: 89
+
+itr1 test papp_caco2
+papp_caco2: 1116
+duplicate_smiles_of_multi: 1116
+
+itr1 test papp_llc
+papp_llc: 92
+duplicate_smiles_of_multi: 92
+
+itr1 test rb_rat
+rb_rat: 32
+duplicate_smiles_of_multi: 32
+
+itr1 test sol
+sol: 2878
+duplicate_smiles_of_multi: 2878
+
+itr2 train clint
+clint: 4205
+duplicate_smiles_of_multi: 4205
+
+itr2 train fe
+fe: 274
+duplicate_smiles_of_multi: 274
+
+itr2 train fubrain
+fubrain: 470
+duplicate_smiles_of_multi: 470
+
+itr2 train fup_human
+fup_human: 2778
+duplicate_smiles_of_multi: 2778
+
+itr2 train fup_rat
+fup_rat: 429
+duplicate_smiles_of_multi: 429
+
+itr2 train ner_human
+ner_human: 357
+duplicate_smiles_of_multi: 357
+
+itr2 train papp_caco2
+papp_caco2: 4465
+duplicate_smiles_of_multi: 4465
+
+itr2 train papp_llc
+papp_llc: 370
+duplicate_smiles_of_multi: 370
+
+itr2 train rb_rat
+rb_rat: 130
+duplicate_smiles_of_multi: 130
+
+itr2 train sol
+sol: 11514
+duplicate_smiles_of_multi: 11514
+
+itr2 test clint
+clint: 1051
+duplicate_smiles_of_multi: 1051
+
+itr2 test fe
+fe: 69
+duplicate_smiles_of_multi: 69
+
+itr2 test fubrain
+fubrain: 117
+duplicate_smiles_of_multi: 117
+
+itr2 test fup_human
+fup_human: 694
+duplicate_smiles_of_multi: 694
+
+itr2 test fup_rat
+fup_rat: 107
+duplicate_smiles_of_multi: 107
+
+itr2 test ner_human
+ner_human: 89
+duplicate_smiles_of_multi: 89
+
+itr2 test papp_caco2
+papp_caco2: 1116
+duplicate_smiles_of_multi: 1116
+
+itr2 test papp_llc
+papp_llc: 92
+duplicate_smiles_of_multi: 92
+
+itr2 test rb_rat
+rb_rat: 33
+duplicate_smiles_of_multi: 33
+
+itr2 test sol
+sol: 2878
+duplicate_smiles_of_multi: 2878
+
+itr3 train clint
+clint: 4205
+duplicate_smiles_of_multi: 4205
+
+itr3 train fe
+fe: 275
+duplicate_smiles_of_multi: 275
+
+itr3 train fubrain
+fubrain: 469
+duplicate_smiles_of_multi: 469
+
+itr3 train fup_human
+fup_human: 2777
+duplicate_smiles_of_multi: 2777
+
+itr3 train fup_rat
+fup_rat: 429
+duplicate_smiles_of_multi: 429
+
+itr3 train ner_human
+ner_human: 357
+duplicate_smiles_of_multi: 357
+
+itr3 train papp_caco2
+papp_caco2: 4465
+duplicate_smiles_of_multi: 4465
+
+itr3 train papp_llc
+papp_llc: 369
+duplicate_smiles_of_multi: 369
+
+itr3 train rb_rat
+rb_rat: 131
+duplicate_smiles_of_multi: 131
+
+itr3 train sol
+sol: 11513
+duplicate_smiles_of_multi: 11513
+
+itr3 test clint
+clint: 1051
+duplicate_smiles_of_multi: 1051
+
+itr3 test fe
+fe: 68
+duplicate_smiles_of_multi: 68
+
+itr3 test fubrain
+fubrain: 118
+duplicate_smiles_of_multi: 118
+
+itr3 test fup_human
+fup_human: 695
+duplicate_smiles_of_multi: 695
+
+itr3 test fup_rat
+fup_rat: 107
+duplicate_smiles_of_multi: 107
+
+itr3 test ner_human
+ner_human: 89
+duplicate_smiles_of_multi: 89
+
+itr3 test papp_caco2
+papp_caco2: 1116
+duplicate_smiles_of_multi: 1116
+
+itr3 test papp_llc
+papp_llc: 93
+duplicate_smiles_of_multi: 93
+
+itr3 test rb_rat
+rb_rat: 32
+duplicate_smiles_of_multi: 32
+
+itr3 test sol
+sol: 2879
+duplicate_smiles_of_multi: 2879
+
+itr4 train clint
+clint: 4205
+duplicate_smiles_of_multi: 4205
+
+itr4 train fe
+fe: 274
+duplicate_smiles_of_multi: 274
+
+itr4 train fubrain
+fubrain: 470
+duplicate_smiles_of_multi: 470
+
+itr4 train fup_human
+fup_human: 2778
+duplicate_smiles_of_multi: 2778
+
+itr4 train fup_rat
+fup_rat: 429
+duplicate_smiles_of_multi: 429
+
+itr4 train ner_human
+ner_human: 357
+duplicate_smiles_of_multi: 357
+
+itr4 train papp_caco2
+papp_caco2: 4465
+duplicate_smiles_of_multi: 4465
+
+itr4 train papp_llc
+papp_llc: 370
+duplicate_smiles_of_multi: 370
+
+itr4 train rb_rat
+rb_rat: 130
+duplicate_smiles_of_multi: 130
+
+itr4 train sol
+sol: 11514
+duplicate_smiles_of_multi: 11514
+
+itr4 test clint
+clint: 1051
+duplicate_smiles_of_multi: 1051
+
+itr4 test fe
+fe: 69
+duplicate_smiles_of_multi: 69
+
+itr4 test fubrain
+fubrain: 117
+duplicate_smiles_of_multi: 117
+
+itr4 test fup_human
+fup_human: 694
+duplicate_smiles_of_multi: 694
+
+itr4 test fup_rat
+fup_rat: 107
+duplicate_smiles_of_multi: 107
+
+itr4 test ner_human
+ner_human: 89
+duplicate_smiles_of_multi: 89
+
+itr4 test papp_caco2
+papp_caco2: 1116
+duplicate_smiles_of_multi: 1116
+
+itr4 test papp_llc
+papp_llc: 92
+duplicate_smiles_of_multi: 92
+
+itr4 test rb_rat
+rb_rat: 33
+duplicate_smiles_of_multi: 33
+
+itr4 test sol
+sol: 2878
+duplicate_smiles_of_multi: 2878
+
+itr5 train clint
+clint: 4204
+duplicate_smiles_of_multi: 4204
+
+itr5 train fe
+fe: 274
+duplicate_smiles_of_multi: 274
+
+itr5 train fubrain
+fubrain: 469
+duplicate_smiles_of_multi: 469
+
+itr5 train fup_human
+fup_human: 2777
+duplicate_smiles_of_multi: 2777
+
+itr5 train fup_rat
+fup_rat: 428
+duplicate_smiles_of_multi: 428
+
+itr5 train ner_human
+ner_human: 356
+duplicate_smiles_of_multi: 356
+
+itr5 train papp_caco2
+papp_caco2: 4464
+duplicate_smiles_of_multi: 4464
+
+itr5 train papp_llc
+papp_llc: 369
+duplicate_smiles_of_multi: 369
+
+itr5 train rb_rat
+rb_rat: 130
+duplicate_smiles_of_multi: 130
+
+itr5 train sol
+sol: 11513
+duplicate_smiles_of_multi: 11513
+
+itr5 test clint
+clint: 1052
+duplicate_smiles_of_multi: 1052
+
+itr5 test fe
+fe: 69
+duplicate_smiles_of_multi: 69
+
+itr5 test fubrain
+fubrain: 118
+duplicate_smiles_of_multi: 118
+
+itr5 test fup_human
+fup_human: 695
+duplicate_smiles_of_multi: 695
+
+itr5 test fup_rat
+fup_rat: 108
+duplicate_smiles_of_multi: 108
+
+itr5 test ner_human
+ner_human: 90
+duplicate_smiles_of_multi: 90
+
+itr5 test papp_caco2
+papp_caco2: 1117
+duplicate_smiles_of_multi: 1117
+
+itr5 test papp_llc
+papp_llc: 93
+duplicate_smiles_of_multi: 93
+
+itr5 test rb_rat
+rb_rat: 33
+duplicate_smiles_of_multi: 33
+
+itr5 test sol
+sol: 2879
+duplicate_smiles_of_multi: 2879
