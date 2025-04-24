@@ -3,7 +3,7 @@
 This README provides an overview of the environment setup and directory/configuration file organization required for multitask Graph Neural Network (GNN) training on ADME property prediction and subsequent fine-tuning, as employed in the paper **“Improving ADME Prediction with Multitask Graph Neural Networks and Assessing Explainability in Lead Optimization”** by Ito S. et al.  
 By following this document, you will understand the essential requirements for data preparation and configuration placement. Detailed training and fine-tuning procedures are not covered here.
 
-![ADME-MTFT: Fig1](./images/workflow_detail.pdf)
+![ADME-MTFT: Fig1](./images/workflow_detail.png)
 
 ## Contact
 - **Data Curator:** Shoma Ito  
